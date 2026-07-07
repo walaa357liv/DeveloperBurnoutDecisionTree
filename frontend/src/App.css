@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(135deg, #f5f7fa, #dfe9f3);
+}
+
+.container {
+  max-width: 750px;
+  margin: 40px auto;
+  padding: 35px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h1 {
+  color: #2c3e50;
+  font-size: 42px;
+  margin-bottom: 10px;
+}
+
+h2 {
+  color: #34495e;
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.form-group {
+  margin: 18px 0;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+  outline: none;
+  border-color: #4caf50;
+}
+
+button {
+  margin-top: 20px;
+  padding: 12px 30px;
+  background: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 17px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #43a047;
+}
+
+.result {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #eef7ff;
+  border: 2px solid #4caf50;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.result h2 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+.result p {
+  font-size: 28px;;
+  font-weight: bold;
+}
+
+.prediction-low {
+  color: #4caf50;
+}
+
+.prediction-medium {
+  color: #f39c12;
+}
+
+.prediction-high {
+  color: #e74c3c;
+}
+
+.prediction-display {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.prediction-dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0,0,0,0.2);
+}
+
+.prediction-dot.low {
+  background: #4caf50;
+}
+
+.prediction-dot.medium {
+  background: #f39c12;
+}
+
+.prediction-dot.high {
+  background: #e74c3c;
+}
+
+.tree-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
