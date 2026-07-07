@@ -37,7 +37,7 @@ function App() {
 };
 
   try {
-  const response = await fetch("https://developerburnoutdecisiontree.onrender.com/api/predict", {
+  const response = await fetch("https://developerburnoutdecisiontree.onrender.com/api/tree/predict", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
