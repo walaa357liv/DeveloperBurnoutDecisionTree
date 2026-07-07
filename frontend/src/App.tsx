@@ -37,7 +37,7 @@ function App() {
 };
 
   try {
-  const response = await fetch("http://localhost:3000/api/tree/predict", {
+  const response = await fetch("https://developerburnoutdecisiontree.onrender.com/api/predict", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
@@ -100,7 +100,7 @@ const convertTreeToFlow = (tree: any) => {
 };
 const loadTree = async () => {
   try {
-    const response = await fetch("http://localhost:3000/api/tree");
+    const response = await fetch("https://developerburnoutdecisiontree.onrender.com/api/tree");
     const tree = await response.json();
 
     const result = convertTreeToFlow(tree);
